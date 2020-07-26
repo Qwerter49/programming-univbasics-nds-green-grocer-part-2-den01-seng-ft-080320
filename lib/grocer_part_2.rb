@@ -30,13 +30,17 @@ end
 def apply_clearance(cart)
   new_cart = []
   i = 0  
+  
   while i < cart.length
-  if cart[i][:clearance]
-    cart[i][:price] -= cart[i][:price]*(0.2)
+  new_cart = cart[i]
+  if new_cart[i][:clearance]
+    new_cart[i][:price] -= new_cart[i][:price]*(0.2)
     binding.pry
+    
   end
   i += 1   
   end
+  new_cart
 end
 
 def checkout(cart, coupons)
