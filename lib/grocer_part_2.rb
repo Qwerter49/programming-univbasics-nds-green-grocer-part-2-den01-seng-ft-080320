@@ -29,8 +29,11 @@ end
 
 def apply_clearance(cart)
   new_cart = []
-  cart.each do |i|
-
+  i = 0  
+  while i < cart.length
+  binding.pry
+  if cart[i][:clearance]
+    
   end
 end
 
