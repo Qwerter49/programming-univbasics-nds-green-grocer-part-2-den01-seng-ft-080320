@@ -51,12 +51,11 @@ def checkout(cart, coupons)
   grand_total += clearanced_cart[i][:price] * clearanced_cart[i][:count]
   i += 1
   end
-  binding.pry
   if grand_total > 100 
     grand_total = grand_total - (grand_total*(0.1))
     grand_total.round 
   end
   
   grand_total
-
+  binding.pry
 end
