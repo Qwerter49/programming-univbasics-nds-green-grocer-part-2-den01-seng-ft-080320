@@ -56,6 +56,8 @@ def checkout(cart, coupons)
     grand_total.round 
   end
   
+  grand_total
+  
   # This method should call
   # * consolidate_cart
   # * apply_coupons
