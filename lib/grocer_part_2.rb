@@ -46,12 +46,12 @@ def checkout(cart, coupons)
   consolidated_cart = consolidate_cart(cart)
   couponed_cart = apply_coupons(consolidated_cart, coupons)
   clearanced_cart = apply_clearance(cart)
-  binding.pry
   i = 0 
   while i < clearanced_cart.length
   grand_total += clearanced_cart[i][:price] * clearanced_cart[i][:count]
   i += 1
   end
+  binding.pry
   if grand_total > 100 
     grand_total = grand_total - (grand_total*(0.1))
     grand_total.round 
