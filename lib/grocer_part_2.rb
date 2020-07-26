@@ -29,7 +29,6 @@ end
 
 def apply_clearance(cart)
   new_cart = []
-  binding.pry
   cart.each do |i|
 
   end
