@@ -31,9 +31,10 @@ def apply_clearance(cart)
   new_cart = []
   i = 0  
   while i < cart.length
-  binding.pry
   if cart[i][:clearance]
-    
+    cart[i][:price] = cart[i][:price] / .2 
+  else
+  i += 1   
   end
 end
 
